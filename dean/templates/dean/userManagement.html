@@ -1,0 +1,75 @@
+{% extends 'dean_userManagement_sidebar.html' %}
+
+{% block content %}
+
+
+<header>
+  <h1>User Management</h1>
+</header>
+<br>
+<br>
+<div class="search-upload-sort-container">
+
+  <div class="search-container">
+    <input type="text" placeholder="Search">
+    <button>
+      <i class='bx bx-search'></i>
+    </button>
+  </div>
+
+ 
+  <button id="myBtn">
+    <i class='bx bx-user-plus'></i>
+  </button>
+
+    <div id="myModal" class="modal">
+
+      <div class="modal-content">
+            <span class="close">&times;</span>
+            <b>Create New Account</b>
+            <br>
+            <br>
+    
+            <b id="Sem">Name:</b>
+            <input type="text" placeholder="Enter User Name">
+    
+            <br>
+            <br>
+    
+            <b id="Sem">Default Password:</b>
+            <input type="text" placeholder="123456">
+    
+            <br>
+            <br>
+            
+            
+            <b id="Sem">Role:</b>
+            <select size="1">
+            <option value="option1">Faculty</option>
+            <option value="option2">QAO</option>
+            <option value="option3">PC</option>
+            </select>
+
+            <br>
+            <br>
+    
+            <div>
+              <button id="bttn">Cancel</button><button id="bttn">Create</button>
+            </div>
+      </div>
+
+    </div>
+
+</div>
+<br>
+<br>
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Department</td>
+    <td>Email</td>
+    <td>Role</td>
+  </tr>
+</table>
+
+{% endblock %}

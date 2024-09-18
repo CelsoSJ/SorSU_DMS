@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'faculty'
+    'faculty',
+    'dean',
+    'qao',
+    'pc'
 ]
 
 MIDDLEWARE = [
@@ -79,7 +82,7 @@ WSGI_APPLICATION = 'sorsu_dms_web_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sorsu_dms',
+        'NAME': 'SorSU_DMS',
         'USER': 'root',
         'PASSWORD': 'Wysiwyg@2001',
         'HOST': '127.0.0.1',  # Or your MySQL server address

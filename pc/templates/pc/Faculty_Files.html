@@ -1,17 +1,16 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <link rel="stylesheet" href="{% static 'faculty/css/body.css' %}">
-  <link rel="stylesheet" href="{% static 'faculty/css/sidebar.css' %}">
-  <link rel="stylesheet" href="{% static 'faculty/css/home.css' %}">
-  <link rel="stylesheet" href="{% static 'faculty/css/media-query1.css' %}">
-  <link rel="stylesheet" href="{% static 'faculty/css/media-query2.css' %}">
-  <link rel="stylesheet" href="{% static 'faculty/css/media-query3.css' %}">
-  <link rel="stylesheet" href="{% static 'faculty/css/media-query4.css' %}">
+  <link rel="stylesheet" href="PC_dashboard.css/body.css">
+  <link rel="stylesheet" href="PC_dashboard.css/sidebar.css">
+  <link rel="stylesheet" href="PC_dashboard.css/Home.css">
+  <link rel="stylesheet" href="PC_dashboard.css/media-query1.css">
+  <link rel="stylesheet" href="PC_dashboard.css/media-query2.css">
+  <link rel="stylesheet" href="PC_dashboard.css/media-query3.css">
+  <link rel="stylesheet" href="PC_dashboard.css/media-query4.css">
 
   <!--Boxicons-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -22,18 +21,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   
-  <title>Faculty Homepage</title>
+  <title>Faculty Profile Page</title>
 </head>
 <body>
 
   <div class="sidebar">
     <div class="ssu-logo-container">
-      <img src="{% static 'faculty/assets/SSU-logo.png' %}" alt="">
+      
+      <img src="assets/SSU-logo.png" alt="">
 
       <div class="system-title">
         <p>Document Management</p>
         <p>System</p>
       </div>
+    
 
       <div class="sidebar-toogle">
         <i class='bx bx-chevron-right'></i>
@@ -42,41 +43,29 @@
       </div>
     </div>
 
-    
-
-    <div class="menu-container">
-
-      
-      <a href="{% url 'homepage' %}">
-        <i class='bx bx-home'></i>
-        <p>Home Page</p>
+    <div class="home-container">
+      <a href="Home.html">
+        <i class='bx bx-home custom-icon'></i>
+        <p>Home</p>
       </a>
 
-      <a href="{% url 'submission_bin_page' %}">
-        <i class='bx bxs-file'></i>
-        <p>Submission Bin</p>
+      <a href="Create_Submission.html">
+        <i class='bx bx-file custom-icon'></i>
+        <p>Submission</p>
       </a>
 
+      <a href="Faculty_Files.html">
+        <i class="bx bx-collection custom-icon"></i>
+        <p>Faculty Files</p>
+      </a> 
 
-
-
-      <a href="{% url 'my_portfolio_page' %}">
-        <i class='bx bx-folder'></i>
-        <p>My Portfolio</p>
-      </a>
-
-
-      <a href="{% url 'profile_page' %}">
-        <i class='bx bx-user-circle'></i>
-        <p>Profile</p>
-      </a>
-
-
+      <a href="My_Profile.html">
+        <i class="bx bxs-user custom-icon"></i>
+        <p>My Profile</p>
+      </a> 
     </div>
 
-   
 
-    
     <div class="log-out-switch">
       <a href="">
         <i class='bx bx-log-out'></i>
@@ -92,20 +81,11 @@
     </div>
 
   </div>
-  
+
   <main>
-   
-    {% block content %}
     
-
-    
-
-    {% endblock %}
-
   </main>
  
-
- 
-  <script src="{% static 'faculty/js/faculty.js' %}"></script>
+  <script src="PC.js"></script>
 </body>
 </html>
