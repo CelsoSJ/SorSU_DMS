@@ -94,7 +94,7 @@
 
   table {
     border-collapse: collapse;
-    margin: 0 auto; /* center the table horizontally */
+     /* center the table horizontally */
   }
   
   th, td {
@@ -110,7 +110,7 @@
   /* add space between columns */
   td {
     margin-right: 10px;
-    padding-right: 250px;
+    padding-right: 100px;
   }
   
   .upload-sort-container button i {
@@ -136,8 +136,7 @@
     border-width:1px;
     border-color:var(--toogle-color);
     padding-inline: 10px;
-    border-top-left-radius:20px ;
-    border-bottom-left-radius:20px;
+    border-radius: 25px 0 0 25px;
     border-right-style: none;
     background-color: var(--primary-color-light);
   }

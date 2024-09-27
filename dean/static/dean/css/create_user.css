@@ -1,0 +1,99 @@
+main{
+  margin-right:40px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.modal-content {
+  background-color: #ab1b1b;
+  width:50%;
+  height:60%;
+  border-radius: 25px;
+
+  
+}
+
+form{
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header{
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+}
+.fields {
+  font-size: 20px;
+  margin-left:40px;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.modal-content b{
+  color: white;
+}
+
+
+
+
+
+#Sem {
+  font-size: 90%;
+  border-radius: 10px;
+
+}
+
+
+
+
+
+#bttn{
+  width: 120px;
+  height: 45px;
+  padding-inline:5%;
+  border-style: solid;
+  border-width:1px;
+  border-color: #d4d2d2;
+  background-color: #d4d2d2;
+  border-radius: 8px;
+  
+  cursor: pointer;
+ 
+
+}
+
+#myBtn{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    padding:8px;
+    width:50px;
+    border-radius: 20%;
+    border-style: solid;
+    border-color: #888;
+    border-width: 1px;
+    margin: 0 300px;
+    margin-left: 5%;
+}
+
+
+#myBtn i{
+  font-size:150%;
+} 
+
+body.dark .modal-content{
+  background-color: var(--sidebar-color);
+}
+
+body.dark td{
+  color: #fefefe;
+}

@@ -9,4 +9,6 @@ urlpatterns = [
     path('myprofile/', views.my_profile, name='my_profile'),
     path('userManagement/', views.userManagement, name='userManagement'),
     path('test-db/', test_db_connection),
+     path('userManagement/create_user', views.create_user, name='create_user')
+   
 ]
